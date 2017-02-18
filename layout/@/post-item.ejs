@@ -1,0 +1,11 @@
+<li class="post-item">
+  <h2 class="post-item-title">
+    <%- link_to(post.permalink, post.title) %>
+  </h2>
+  <div>
+    <time><%= full_date(post.date, "DD MMMM YYYY") %></time>
+    <span><%= __('in') %>
+    </span><%- list_categories({depth: -1, style: "none", show_count: false})%>
+  </div>
+  <%- post.excerpt %>
+</li>
