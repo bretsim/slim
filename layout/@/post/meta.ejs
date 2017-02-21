@@ -1,0 +1,18 @@
+<dl class="post-meta">
+  <div  class="inline">
+    <dt><%= __('created_at') %></dt>
+    <dd><time><%= full_date(page.date, "DD MMMM YYYY")%></time></dd>
+  </div>
+  <div class="inline">
+    <dt><%= __('updated_at') %></dt>
+    <dd><time><%= full_date(page.updated, "DD MMMM YYYY") %></time></dd>
+  </div>
+  <div class="inline">
+    <dt><%= __('categories') %></dt>
+    <dd><%- list_categories(page.categories, {depth: -1, style: "none", show_count: false})%></dd>
+  </div>
+  <div class="inline">
+    <dt><%= __('tags') %></dt>
+    <dd><%- list_tags(page.tags, {style: "none", show_count: false})%></dd>
+  </div>
+</dl>

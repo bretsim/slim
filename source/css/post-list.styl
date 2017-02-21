@@ -1,17 +1,30 @@
 .post-list
   padding-left 0
   list-style none
+  a
+    text-decoration none
 
 .post-item-title
   font-size 2rem
   margin-bottom 0.3rem
+
+.post-item-title
   a
-    text-decoration none
+    color $fontColor
+    &:hover
+      color saturation($linkColor, 70%)
+.post-item
   time
-    margin-left 0.3rem
     font-weight 400
-    font-size 1.5rem
+    font-size 1.1rem
+    font-weight 600
+    color lightness($fontColor, 35%)
 
 .post-item
   p
     margin-top 0.3rem
+    text-align justify
+.post-item
+  p
+    a
+      color $fontColor

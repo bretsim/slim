@@ -1,0 +1,28 @@
+<div class="post">
+  <div class="lead">
+    <div class="container">
+      <h1><%= page.title %></h1>
+      <p>
+        <%- list_categories(page.categories, {depth: -1, style: "none", show_count: false})%><br>
+        <time><%= full_date(page.date, "DD MMMM YYYY")%></time>
+      </p>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="container">
+      <article>
+        <header>
+          <section class="post-excerpt">
+            <%- page.excerpt %>
+          </section>
+        </header>
+        <section class="post-content">
+          <%- page.more %>
+        </section>
+        <footer>
+          <%- partial('@/post/meta.ejs', {post: page})%>
+        </footer>
+      </article>
+    </div>
+  </div>
+</div>

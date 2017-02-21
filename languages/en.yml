@@ -1,2 +1,9 @@
 index:
-  title: Recent posts
+  title: recent posts
+in: in
+archives: archives
+created_at: published_at
+updated_at: updated_at
+categories: categories
+category: Category
+tags: tags

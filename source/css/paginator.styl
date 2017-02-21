@@ -1,0 +1,21 @@
+.paginator
+  margin-top 3rem
+  color grey
+  text-align center
+  a
+    text-decoration none
+
+.paginator
+  .page-number, .extend
+    background saturation($linkColor, 70%)
+    color $backgroundColor
+    padding 0.5rem
+.paginator
+  .prev
+    border-right 1px solid darken($linkColor, 20%)
+  .next
+    border-left 1px solid darken($linkColor, 20%)
+.page-number.current
+  background transparent
+  color grey
+  

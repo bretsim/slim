@@ -1,3 +1,9 @@
 index:
   title: Articles récents
 in: dans
+archives: Archives
+created_at: Publié le
+updated_at: Mis à jour le
+categories: Catégories
+category: Catégorie
+tags: Mots clés

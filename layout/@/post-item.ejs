@@ -5,7 +5,7 @@
   <div>
     <time><%= full_date(post.date, "DD MMMM YYYY") %></time>
     <span><%= __('in') %>
-    </span><%- list_categories({depth: -1, style: "none", show_count: false})%>
+    </span><%- list_categories(post.categories, {depth: -1, style: "none", show_count: false})%>
   </div>
   <%- post.excerpt %>
 </li>
