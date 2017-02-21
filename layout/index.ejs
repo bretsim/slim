@@ -4,14 +4,28 @@
       <h1><%= __('index.title') %></h1>
     </div>
   </div>
-  <div class="main-content">
-    <div class="container">
+  <div class="container">
+    <div class="main-content">
       <ul class="post-list">
         <% page.posts.forEach(function(post) { %>
           <%- partial('@/post-item', {post: post}) %>
         <% }) %>
       </ul>
       <%- partial('@/paginator')%>
+    </div>
+    <div class="sidebar">
+      <aside class="panel">
+        <h4><%= __('archives') %></h4>
+        <%- list_archives({class: "aside", "type": "yearly"}) %>
+      </aside>
+      <aside class="panel">
+        <h4><%= __('categories') %></h4>
+        <%- list_categories({class: "aside"})%>
+      </aside>
+      <aside class="panel">
+        <h4><%= __('tags')%></h4>
+        <%- tagcloud() %>
+      </aside>
     </div>
   </div>
 </div>

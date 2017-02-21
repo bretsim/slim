@@ -2,7 +2,6 @@ $linkColor = #c70b2a
 $fontColor = #000
 $backgroundColor = #fff
 html
-  font-size 14px
   font-family 'Muli'
 
 a
@@ -22,10 +21,17 @@ dd
 .inline
   display flex
   flex-flow row wrap
-    
-@import "navbar"
-@import "lead"
-@import "post-list"
-@import "paginator"
-@import "post"
-@import "highlight"
+
+.sidebar
+  display flex
+  flex-flow row wrap
+  justify-content space-between
+  
+@import "_navbar"
+@import "_lead"
+@import "_post-list"
+@import "_paginator"
+@import "_post"
+@import "_highlight"
+@import "_category_list"
+@import "_panel"
