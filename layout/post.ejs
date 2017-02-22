@@ -20,9 +20,14 @@
           <%- page.more %>
         </section>
         <footer>
-          <%- partial('@/post/meta.ejs', {post: page})%>
         </footer>
       </article>
+      <div class="sidebar">
+        <%- partial('@/asides/recent_posts')%>
+        <%- partial('@/asides/categories')%>
+        <%- partial('@/asides/archives')%>
+        <%- partial('@/asides/tagcloud')%>
+      </div>
     </div>
   </div>
 </div>

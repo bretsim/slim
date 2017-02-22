@@ -1,7 +1,7 @@
 <div class="home">
   <div class="lead">
     <div class="container">
-      <h1><%= __('index.title') %></h1>
+      <h1><%= __('recent_posts') %></h1>
     </div>
   </div>
   <div class="container">
@@ -14,18 +14,9 @@
       <%- partial('@/paginator')%>
     </div>
     <div class="sidebar">
-      <aside class="panel">
-        <h4><%= __('archives') %></h4>
-        <%- list_archives({class: "aside", "type": "yearly"}) %>
-      </aside>
-      <aside class="panel">
-        <h4><%= __('categories') %></h4>
-        <%- list_categories({class: "aside"})%>
-      </aside>
-      <aside class="panel">
-        <h4><%= __('tags')%></h4>
-        <%- tagcloud() %>
-      </aside>
+      <%- partial('@/asides/categories') %>
+      <%- partial('@/asides/archives') %>
+      <%- partial('@/asides/tagcloud') %>
     </div>
   </div>
 </div>
