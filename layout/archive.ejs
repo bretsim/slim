@@ -1,4 +1,4 @@
-<div class="archives">
+<div class="archive">
   <div class="lead">
     <div class="container">
       <h1><%= __('archives') %></h1>
@@ -6,6 +6,7 @@
   </div>
   <div class="main-content">
     <div class="container">
+      <%- partial('@/widgets/archive_map') %>
       <ul class="post-list">
         <% page.posts.forEach(function(post) { %>
           <%- partial('@/post-item', {post: post}) %>

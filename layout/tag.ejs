@@ -1,8 +1,8 @@
-<div class="category">
+<div class="tag">
   <div class="lead">
     <div class="container">
-      <h1><%= __('category') %></h1>
-      <p><%= page.category %></p>
+      <h1><%= __('tag') %></h1>
+      <p><%= page.tag %></p>
     </div>
   </div>
   <div class="main-content">
@@ -15,8 +15,8 @@
       <%- partial('@/paginator')%>
       <div class="sidebar">
         <%- partial('@/asides/recent_posts')%>
+        <%- partial('@/asides/categories')%>
         <%- partial('@/asides/archives')%>
-        <%- partial('@/asides/tagcloud')%>
       </div>
     </div>
   </div>

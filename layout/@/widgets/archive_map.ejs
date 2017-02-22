@@ -1,0 +1,12 @@
+<div class="archive-map">
+  <% _.forIn(archivesMap, function(year, key) { %>
+  <div class="archive-list">
+    <h3 class="archive-list-year"><%- link_to("archives/"+key +"/", key) %></h3>
+    <ul class="archive-list-months">
+    <% _.forEach(year, function(month) { %>
+      <li><%-link_to("archives/" + key + "/" + full_date(month,"MM") +"/", full_date(month, "MMMM")) %></li>
+    <% }) %>
+    </ul>
+  </div>
+  <% }) %>
+</div>
