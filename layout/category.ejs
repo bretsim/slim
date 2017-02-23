@@ -1,23 +1,23 @@
-<div class="category">
+<div class="page">
   <div class="lead">
     <div class="container">
       <h1><%= __('category') %></h1>
       <p><%= page.category %></p>
     </div>
   </div>
-  <div class="main-content">
-    <div class="container">
+  <div class="container">
+    <div class="main-content">
       <ul class="post-list">
         <% page.posts.forEach(function(post) { %>
           <%- partial('@/post-item', {post: post}) %>
         <% }) %>
       </ul>
       <%- partial('@/paginator')%>
-      <div class="sidebar">
-        <%- partial('@/asides/recent_posts')%>
-        <%- partial('@/asides/archives')%>
-        <%- partial('@/asides/tagcloud')%>
-      </div>
+    </div>
+    <div class="sidebar">
+      <%- partial('@/asides/recent_posts')%>
+      <%- partial('@/asides/archives')%>
+      <%- partial('@/asides/tagcloud')%>
     </div>
   </div>
 </div>

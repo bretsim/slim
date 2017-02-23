@@ -1,11 +1,11 @@
-<div class="archive">
+<div class="page">
   <div class="lead">
     <div class="container">
       <h1><%= __('archives') %></h1>
     </div>
   </div>
-  <div class="main-content">
-    <div class="container">
+  <div class="container">
+    <div class="main-content">
       <%- partial('@/widgets/archive_map') %>
       <ul class="post-list">
         <% page.posts.forEach(function(post) { %>
@@ -13,11 +13,11 @@
         <% }) %>
       </ul>
       <%- partial('@/paginator')%>
-      <div class="sidebar">
-        <%- partial('@/asides/recent_posts')%>
-        <%- partial('@/asides/categories')%>
-        <%- partial('@/asides/tagcloud')%>
-      </div>
+    </div>
+    <div class="sidebar">
+      <%- partial('@/asides/recent_posts')%>
+      <%- partial('@/asides/categories')%>
+      <%- partial('@/asides/tagcloud')%>
     </div>
   </div>
 </div>

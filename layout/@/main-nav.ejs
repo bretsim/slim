@@ -1,6 +1,5 @@
-<nav class="navbar-collapse collapse" id="navbar-collapse">
+<nav class="main-nav">
   <ul class="nav">
-    <li class="form-container"><%- search_form()%></li>
   <% for(var i in site.data.menu) { %>
     <li><%- link_to(site.data.menu[i], i) %></li>
   <% } %>

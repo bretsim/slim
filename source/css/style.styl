@@ -9,6 +9,7 @@ a
 
 .container
   padding 0 1rem
+
 .collapse
   display none
 
@@ -29,8 +30,32 @@ dd
 .squared-list
   list-style square inside
 
+.site-footer
+  margin 1rem 0
+  .container
+    border-top 1px solid lightness($fontColor, 80%)
+  .tools
+    margin 1rem 0
+    text-align center
+    a
+      text-decoration none
+      font-weight bold
 .copyright
-  font-size 0.9rem
+  font-size 0.8rem
+  text-align center
+  font-weight 100
+
+@media screen and (min-width: 1024px)
+  .page > .container
+    display flex
+    flex-flow row nowrap
+    .main-content
+      width 75%
+      order 2
+    .sidebar
+      flex-flow column nowrap
+      width 25%
+      order 1
 @import "_navbar"
 @import "_lead"
 @import "_post-list"

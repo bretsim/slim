@@ -1,4 +1,4 @@
-<div class="post">
+<div class="post page">
   <div class="lead">
     <div class="container">
       <h1><%= page.title %></h1>
@@ -8,10 +8,12 @@
       </p>
     </div>
   </div>
-  <div class="main-content">
-    <div class="container">
+  <div class="container">
+    <div class="main-content">
       <article>
         <header>
+          <h2>Table of content</h2>
+          <%- toc(page.content, {list_number: false}) %>
           <section class="post-excerpt">
             <%- page.excerpt %>
           </section>
@@ -22,12 +24,12 @@
         <footer>
         </footer>
       </article>
-      <div class="sidebar">
-        <%- partial('@/asides/recent_posts')%>
-        <%- partial('@/asides/categories')%>
-        <%- partial('@/asides/archives')%>
-        <%- partial('@/asides/tagcloud')%>
-      </div>
+    </div>
+    <div class="sidebar">
+      <%- partial('@/asides/recent_posts')%>
+      <%- partial('@/asides/categories')%>
+      <%- partial('@/asides/archives')%>
+      <%- partial('@/asides/tagcloud')%>
     </div>
   </div>
 </div>
