@@ -4,7 +4,13 @@
       <h1><%= page.title %></h1>
       <p>
         <%- list_categories(page.categories, {depth: -1, style: "none", show_count: false})%><br>
-        <time><%= full_date(page.date, "DD MMMM YYYY")%></time>
+        <time><%= full_date(page.date, "DD MMMM YYYY")%></time><br>
+        <% if(config.twitter_id) { %>
+          <a class="twitter-share-button"
+              href="https://twitter.com/intent/tweet">
+            Tweet
+          </a>
+        <% } %>
       </p>
     </div>
   </div>

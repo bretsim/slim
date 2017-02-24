@@ -1,4 +1,6 @@
-<aside class="panel">
-  <h4><%= __('tags')%></h4>
-  <%- tagcloud() %>
-</aside>
+<% if (site.tags.length > 0) { %>
+  <aside class="panel">
+    <h4><%= __('tags')%></h4>
+    <%- tagcloud() %>
+  </aside>
+<% } %>
